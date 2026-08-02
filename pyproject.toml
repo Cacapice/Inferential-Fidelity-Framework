@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transfermod"
+version = "1.2.2"
+description = "Finite-tolerance, coverage-aware certification of quantities of interest under approximation contracts."
+readme = "README.md"
+authors = [{ name = "Katherine J. Ombrellaro" }]
+requires-python = ">=3.10"
+license = { text = "AGPL-3.0-only" }
+dependencies = ["numpy>=1.24", "scipy>=1.10", "matplotlib>=3.6"]
+classifiers = [
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "coverage[toml]>=7"]
+dev = [
+    "pytest>=7",
+    "coverage[toml]>=7",
+    "build>=1",
+    "twine>=5",
+    "ruff>=0.6",
+    "mypy>=1.10",
+]
+
+[tool.setuptools]
+py-modules = ["sfbench"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[project.urls]
+Repository = "https://github.com/Cacapice/Inferential-Fidelity-Framework"
+Issues = "https://github.com/Cacapice/Inferential-Fidelity-Framework/issues"
+
+
+[tool.coverage.run]
+branch = true
+source = ["transfermod"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false

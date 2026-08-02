@@ -1,0 +1,128 @@
+{
+  "reference": {
+    "E0": -1.0760259827921865,
+    "gap": 1.9614739833226604
+  },
+  "nqs": {
+    "hidden": 24,
+    "epochs": 2000,
+    "energy": -1.0759505711828026,
+    "energy_err": 7.541160938395741e-05,
+    "exp_val": 0.5166530071297694,
+    "gap": 1.9695842517605862,
+    "verdict": "CERTIFIED (conventional pass, spectral pass)"
+  },
+  "capacity_sweep": [
+    {
+      "hidden": 2,
+      "epochs": 1500,
+      "energy_err": 3.8802429575574946,
+      "exp_val_err": 0.21731651282114184,
+      "gap": 0.07980891317059763,
+      "verdict": "REJECTED (conventional FAIL)",
+      "failing_gates": [
+        "G1a",
+        "G1b",
+        "G2",
+        "G3",
+        "G4",
+        "G5",
+        "G6"
+      ]
+    },
+    {
+      "hidden": 4,
+      "epochs": 1500,
+      "energy_err": 0.01080780840502471,
+      "exp_val_err": 0.00041687940437784565,
+      "gap": 1.9585111019287604,
+      "verdict": "CERTIFIED (conventional pass, spectral pass)",
+      "failing_gates": []
+    },
+    {
+      "hidden": 8,
+      "epochs": 2000,
+      "energy_err": 0.004422466945768644,
+      "exp_val_err": 0.0007125025235590332,
+      "gap": 1.9652976799555397,
+      "verdict": "REJECTED (conventional FAIL)",
+      "failing_gates": [
+        "G1b"
+      ]
+    },
+    {
+      "hidden": 24,
+      "epochs": 2000,
+      "energy_err": 7.541160938395741e-05,
+      "exp_val_err": 2.9088589308168267e-05,
+      "gap": 1.9695842517605862,
+      "verdict": "CERTIFIED (conventional pass, spectral pass)",
+      "failing_gates": []
+    }
+  ],
+  "reduced_order_model": [
+    {
+      "rank": 2,
+      "gap": 2.611196242569669,
+      "C0_rel_err": 5.8649455222318e-16,
+      "Ctail_rel_err": 0.9802812522139385,
+      "conventional_pass": true,
+      "spectral_pass": false,
+      "verdict": "CONFOUND (conventional pass, spectral FAIL)"
+    },
+    {
+      "rank": 3,
+      "gap": 2.3943959731196545,
+      "C0_rel_err": 7.819927362975734e-16,
+      "Ctail_rel_err": 0.9086918065715742,
+      "conventional_pass": true,
+      "spectral_pass": false,
+      "verdict": "CONFOUND (conventional pass, spectral FAIL)"
+    },
+    {
+      "rank": 4,
+      "gap": 2.0850945366515847,
+      "C0_rel_err": 1.75948365666954e-15,
+      "Ctail_rel_err": 0.445277531220118,
+      "conventional_pass": true,
+      "spectral_pass": false,
+      "verdict": "CONFOUND (conventional pass, spectral FAIL)"
+    },
+    {
+      "rank": 5,
+      "gap": 2.018785690486742,
+      "C0_rel_err": 1.9549818407439334e-16,
+      "Ctail_rel_err": 0.22139658932416711,
+      "conventional_pass": true,
+      "spectral_pass": false,
+      "verdict": "CONFOUND (conventional pass, spectral FAIL)"
+    },
+    {
+      "rank": 6,
+      "gap": 1.9796254478544166,
+      "C0_rel_err": 7.819927362975734e-16,
+      "Ctail_rel_err": 0.06829989356620575,
+      "conventional_pass": true,
+      "spectral_pass": true,
+      "verdict": "CERTIFIED (conventional pass, spectral pass)"
+    },
+    {
+      "rank": 10,
+      "gap": 1.961721871703154,
+      "C0_rel_err": 3.909963681487867e-16,
+      "Ctail_rel_err": 0.00039603461795519984,
+      "conventional_pass": true,
+      "spectral_pass": true,
+      "verdict": "CERTIFIED (conventional pass, spectral pass)"
+    },
+    {
+      "rank": 20,
+      "gap": 1.9614739833227612,
+      "C0_rel_err": 1.9549818407439334e-15,
+      "Ctail_rel_err": 2.4801381420553458e-14,
+      "conventional_pass": true,
+      "spectral_pass": true,
+      "verdict": "CERTIFIED (conventional pass, spectral pass)"
+    }
+  ]
+}

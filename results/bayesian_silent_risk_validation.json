@@ -1,0 +1,22 @@
+{
+  "posterior_draws": 20000,
+  "reference_q": 0.0510683729681006,
+  "posterior_mean_q": 0.14620820583833924,
+  "posterior_median_q": 0.04997031070994506,
+  "posterior_interval": [
+    0.002759266139151803,
+    0.763205675113593
+  ],
+  "posterior_silent_risk": 0.2008,
+  "posterior_fidelity_radius": 0.37038595708007044,
+  "credible_set_worst_case": 0.9489316270318994,
+  "credible_set_decision_diameter": 0.9992330317946962,
+  "recurrence_probability": 0.0353,
+  "geometry": {
+    "discrepancy": "absolute",
+    "reference_type": "posterior_plugin_center",
+    "reference_q": 0.0510683729681006,
+    "tolerance": 0.15,
+    "stabilization": null
+  }
+}

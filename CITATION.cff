@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use TransferMod, please cite this software and the accompanying methods note."
+title: "TransferMod: Finite-Tolerance, Coverage-Aware Certification for Scientific Approximations"
+type: software
+abstract: "TransferMod is the canonical project name; Inferential Fidelity Framework is the historical repository alias, and transfermod is the Python package name."
+version: 1.2.2
+date-released: 2026-08-01
+authors:
+  - family-names: Ombrellaro
+    given-names: Katherine J.
+repository-code: "https://github.com/Cacapice/Inferential-Fidelity-Framework"
+license: AGPL-3.0-only
+keywords:
+  - inferential fidelity
+  - surrogate models
+  - uncertainty quantification
+  - adversarial scientific computing
+  - certification

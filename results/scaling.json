@@ -1,0 +1,150 @@
+{
+  "krylov_validation": {
+    "full_dim": 1333,
+    "vacuum_dim": 85,
+    "gap_diff": 1.1102230246251565e-15,
+    "corr_reldiff": 1.5639854725951443e-15
+  },
+  "lambda_convergence": [
+    {
+      "Lambda": 1,
+      "dim": 19,
+      "gap": 2.085890578545504
+    },
+    {
+      "Lambda": 2,
+      "dim": 85,
+      "gap": 1.9614739833226584
+    },
+    {
+      "Lambda": 3,
+      "dim": 231,
+      "gap": 1.9586243984115919
+    },
+    {
+      "Lambda": 4,
+      "dim": 489,
+      "gap": 1.9586126976399887
+    }
+  ],
+  "larger_volume": {
+    "dim": 763,
+    "gap": 1.556678884992802,
+    "w1_frac": 0.03323336284665452,
+    "surrogates": [
+      {
+        "label": "spurious_slow (under-estimate)",
+        "gap": 0.9340073309956811,
+        "conventional_pass": true,
+        "spectral_pass": false
+      },
+      {
+        "label": "attenuate_tail (over-estimate, now natural)",
+        "gap": 2.7762424132858676,
+        "conventional_pass": true,
+        "spectral_pass": false
+      }
+    ]
+  },
+  "trained_noise_sweep": [
+    {
+      "label": "(a) tail-informative noise 0.1% (relative)",
+      "fit_gap": 1.5569287547070658,
+      "gap_err": 0.00016051461651645603,
+      "conventional_pass": true,
+      "spectral_pass": true,
+      "rel_noise": 0.001,
+      "noise_model": "relative"
+    },
+    {
+      "label": "(b) constant noise floor 0.1% (absolute)",
+      "fit_gap": 2.4408718009832646,
+      "gap_err": 0.5679995563083334,
+      "conventional_pass": true,
+      "spectral_pass": false,
+      "rel_noise": 0.001,
+      "noise_model": "absolute_floor"
+    },
+    {
+      "label": "(c) constant noise floor 0.3% (absolute)",
+      "fit_gap": 2.2390843248083083,
+      "gap_err": 0.4383726447337672,
+      "conventional_pass": true,
+      "spectral_pass": false,
+      "rel_noise": 0.003,
+      "noise_model": "absolute_floor"
+    },
+    {
+      "label": "(d) constant noise floor 0.5% (absolute)",
+      "fit_gap": 2.0622345771469908,
+      "gap_err": 0.3247655614963432,
+      "conventional_pass": false,
+      "spectral_pass": false,
+      "rel_noise": 0.005,
+      "noise_model": "absolute_floor"
+    }
+  ],
+  "estimator_robustness": [
+    {
+      "estimator": "effective-mass plateau",
+      "ref_estimate": 1.969666909020922,
+      "recovers_ref": true,
+      "confound_estimate": 1.222191896900182,
+      "fooled": true
+    },
+    {
+      "estimator": "single-exp tail fit",
+      "ref_estimate": 1.9878252016842806,
+      "recovers_ref": true,
+      "confound_estimate": 1.2916902211241166,
+      "fooled": true
+    },
+    {
+      "estimator": "multi-exp fit",
+      "ref_estimate": 1.9694803806668426,
+      "recovers_ref": true,
+      "confound_estimate": 1.205996045853165,
+      "fooled": true
+    },
+    {
+      "estimator": "cosh fit",
+      "ref_estimate": 2.65920164026489,
+      "recovers_ref": false,
+      "confound_estimate": 2.5581953078882465,
+      "fooled": false
+    },
+    {
+      "estimator": "Prony / linear prediction",
+      "ref_estimate": 1.9624926312671485,
+      "recovers_ref": true,
+      "confound_estimate": 1.2091815109430963,
+      "fooled": true
+    },
+    {
+      "estimator": "Bayesian model average",
+      "ref_estimate": 2.054990732742795,
+      "recovers_ref": true,
+      "confound_estimate": 1.5403343190147116,
+      "fooled": true
+    }
+  ],
+  "multichannel": [
+    {
+      "case": "single_channel_fake",
+      "gaps": [
+        1.222191896900182,
+        1.9614783573215746
+      ],
+      "cross_channel_consistent": false
+    },
+    {
+      "case": "all_channel_fake",
+      "gaps": [
+        1.222191896900182,
+        1.2870702916645087
+      ],
+      "cross_channel_consistent": true,
+      "reference_gate": "CONFOUND (conventional pass, spectral FAIL)"
+    }
+  ]
+}

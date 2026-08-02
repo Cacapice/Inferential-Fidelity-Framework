@@ -1,0 +1,245 @@
+{
+  "reference": {
+    "theory": "2+1D compact U(1) Kogut-Susskind (exact diagonalisation)",
+    "lattice": [
+      2,
+      2
+    ],
+    "Lambda": 2,
+    "g": 1.0,
+    "dim": 1333,
+    "exact_channel_gap": 1.9614739833226535,
+    "true_gap_E1_E0": 0.5916180201056674,
+    "plaquette_expectation": 0.516623918540461,
+    "equal_time_variance": 0.283947145054473
+  },
+  "surrogates": [
+    {
+      "name": "identity(echo)",
+      "conventional_pass": true,
+      "spectral_pass": true,
+      "asymptotic_gap": 1.9614739833226535,
+      "gate": [
+        {
+          "name": "G1a_equal_time_expectation",
+          "kind": "conventional",
+          "value": 0.0,
+          "threshold": 0.01,
+          "passed": true
+        },
+        {
+          "name": "G1b_equal_time_variance",
+          "kind": "conventional",
+          "value": 0.0,
+          "threshold": 0.01,
+          "passed": true
+        },
+        {
+          "name": "G2_aggregate_correlator_rmse",
+          "kind": "conventional",
+          "value": 0.0,
+          "threshold": 0.005,
+          "passed": true
+        },
+        {
+          "name": "G3_channel_gap",
+          "kind": "spectral",
+          "value": 0.0,
+          "threshold": 0.1,
+          "passed": true
+        },
+        {
+          "name": "G4_plateau_effective_mass",
+          "kind": "spectral",
+          "value": 0.0,
+          "threshold": 0.1,
+          "passed": true
+        },
+        {
+          "name": "G5_long_distance_decay",
+          "kind": "spectral",
+          "value": 0.0,
+          "threshold": 0.15,
+          "passed": true
+        },
+        {
+          "name": "G6_overlap_alignment",
+          "kind": "spectral",
+          "value": 0.0,
+          "threshold": 0.15,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "name": "reduced-transfer(ordinary)",
+      "conventional_pass": true,
+      "spectral_pass": true,
+      "asymptotic_gap": 1.9614739833226535,
+      "gate": [
+        {
+          "name": "G1a_equal_time_expectation",
+          "kind": "conventional",
+          "value": 0.0,
+          "threshold": 0.01,
+          "passed": true
+        },
+        {
+          "name": "G1b_equal_time_variance",
+          "kind": "conventional",
+          "value": 8.170131394162039e-05,
+          "threshold": 0.01,
+          "passed": true
+        },
+        {
+          "name": "G2_aggregate_correlator_rmse",
+          "kind": "conventional",
+          "value": 2.7233771316024558e-05,
+          "threshold": 0.005,
+          "passed": true
+        },
+        {
+          "name": "G3_channel_gap",
+          "kind": "spectral",
+          "value": 0.0,
+          "threshold": 0.1,
+          "passed": true
+        },
+        {
+          "name": "G4_plateau_effective_mass",
+          "kind": "spectral",
+          "value": 0.0,
+          "threshold": 0.1,
+          "passed": true
+        },
+        {
+          "name": "G5_long_distance_decay",
+          "kind": "spectral",
+          "value": 2.7851222088906138e-12,
+          "threshold": 0.15,
+          "passed": true
+        },
+        {
+          "name": "G6_overlap_alignment",
+          "kind": "spectral",
+          "value": 8.170131394162039e-05,
+          "threshold": 0.15,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "name": "spectral-shortcut(constructed)",
+      "conventional_pass": true,
+      "spectral_pass": false,
+      "asymptotic_gap": 1.1768843899935921,
+      "gate": [
+        {
+          "name": "G1a_equal_time_expectation",
+          "kind": "conventional",
+          "value": 0.0,
+          "threshold": 0.01,
+          "passed": true
+        },
+        {
+          "name": "G1b_equal_time_variance",
+          "kind": "conventional",
+          "value": 0.0,
+          "threshold": 0.01,
+          "passed": true
+        },
+        {
+          "name": "G2_aggregate_correlator_rmse",
+          "kind": "conventional",
+          "value": 0.0025605013350092297,
+          "threshold": 0.005,
+          "passed": true
+        },
+        {
+          "name": "G3_channel_gap",
+          "kind": "spectral",
+          "value": 0.4,
+          "threshold": 0.1,
+          "passed": false
+        },
+        {
+          "name": "G4_plateau_effective_mass",
+          "kind": "spectral",
+          "value": 0.3794931055080234,
+          "threshold": 0.1,
+          "passed": false
+        },
+        {
+          "name": "G5_long_distance_decay",
+          "kind": "spectral",
+          "value": 64.20535138549333,
+          "threshold": 0.15,
+          "passed": false
+        },
+        {
+          "name": "G6_overlap_alignment",
+          "kind": "spectral",
+          "value": 0.0,
+          "threshold": 0.15,
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "nuisance_sweep": [
+    {
+      "g": 0.8,
+      "Lambda": 1,
+      "dim": 115,
+      "conventional_pass": true,
+      "spectral_pass": false,
+      "gap_ref": 3.1757177389046607,
+      "gap_ctl": 1.9054306433427963
+    },
+    {
+      "g": 1.0,
+      "Lambda": 1,
+      "dim": 115,
+      "conventional_pass": true,
+      "spectral_pass": false,
+      "gap_ref": 2.085890578545505,
+      "gap_ctl": 1.2515343471273028
+    },
+    {
+      "g": 1.2,
+      "Lambda": 1,
+      "dim": 115,
+      "conventional_pass": true,
+      "spectral_pass": false,
+      "gap_ref": 2.3723821497296473,
+      "gap_ctl": 1.4234292898377883
+    },
+    {
+      "g": 0.8,
+      "Lambda": 2,
+      "dim": 1333,
+      "conventional_pass": true,
+      "spectral_pass": false,
+      "gap_ref": 2.9760437718389556,
+      "gap_ctl": 1.7856262631033732
+    },
+    {
+      "g": 1.0,
+      "Lambda": 2,
+      "dim": 1333,
+      "conventional_pass": true,
+      "spectral_pass": false,
+      "gap_ref": 1.9614739833226535,
+      "gap_ctl": 1.1768843899935921
+    },
+    {
+      "g": 1.2,
+      "Lambda": 2,
+      "dim": 1333,
+      "conventional_pass": true,
+      "spectral_pass": false,
+      "gap_ref": 2.292520904180433,
+      "gap_ctl": 1.3755125425082597
+    }
+  ]
+}

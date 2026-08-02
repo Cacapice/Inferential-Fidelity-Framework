@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "dimension": 2,
+      "spatial_points": 1024,
+      "uniform_evaluations": 50,
+      "adaptive_evaluations": 36,
+      "uniform_runtime_seconds": 0.004353680000349414,
+      "adaptive_runtime_seconds": 0.0037596409993057023,
+      "uniform_best_q_error": 0.016477227490793375,
+      "adaptive_best_q_error": 0.016661117023518936,
+      "adaptive_fraction_of_uniform": 1.0111602229700543
+    },
+    {
+      "dimension": 3,
+      "spatial_points": 5832,
+      "uniform_evaluations": 250,
+      "adaptive_evaluations": 108,
+      "uniform_runtime_seconds": 0.059554215999924054,
+      "adaptive_runtime_seconds": 0.03227680100008001,
+      "uniform_best_q_error": 0.021523943449377896,
+      "adaptive_best_q_error": 0.02152394344937788,
+      "adaptive_fraction_of_uniform": 0.9999999999999992
+    }
+  ]
+}
